@@ -16,6 +16,7 @@ const useQueryAPI = () => {
         throw new Error("Error");
       }
       dispatch(fetchPersons());
+      setOpen(false);
     } catch (error) {
       alert("Error occured", JSON.stringify(error));
     }
